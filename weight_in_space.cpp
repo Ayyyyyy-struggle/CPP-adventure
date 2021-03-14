@@ -7,7 +7,7 @@
 int main() {
   
   double weight, planet_weight;
-  int num = 7;
+  int num ;
 
   //Ask him to input the weight
   std::cout << "Type in your earth weight: ";
@@ -49,6 +49,9 @@ int main() {
     case 7:
       planet_weight = 1.19 * weight;
       std::cout << "Your weight on the Neptune is " << planet_weight << " \n";
+      break;
+    default:
+      std::cout << "You input an invalid number, please try again.\n";
       break;
   }
   
